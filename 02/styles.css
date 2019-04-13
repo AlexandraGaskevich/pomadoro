@@ -1,11 +1,13 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&subset=cyrillic');
 
-body {
+* {
   box-sizing: border-box;
-  max-width: 960px;
-  padding: 0 40px;
 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
   color: #293330;
   background: #E9F5F2;
 
@@ -58,4 +60,40 @@ nav ul li {
 
 nav ul li:not(:last-child) {
   margin-right: 30px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+input {
+  width: 70%;
+  height: 55px;
+  margin-top: 15px;
+  padding: 15px 20px;
+
+  color: #E9F5F2;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: #A0B8B2;
+
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #E9F5F2;
+
+  font-style: italic;
+}
+
+form label:not(:first-child) {
+  margin-top: 40px;
 }
