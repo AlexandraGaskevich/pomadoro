@@ -10,12 +10,12 @@
       <img class="logo" src="img/logo.svg" alt="logo">
       <ul>
         <li>
-          <a class="is-active" href="#timer-section">
+          <a id="timer-section-button" class="is-active" href="#timer-section">
             Таймер
           </a>
         </li>
         <li>
-          <a href="#stats-section">
+          <a id="stats-section-button" class="stats-section" href="#stats-section">
             Статистика
           </a>
         </li>
@@ -35,20 +35,31 @@
           <label>
             Сколько хотите потратить времени?
           </label>
-          <button class="button" type="button">25 минут</button>
-          <button class="button" type="button">5 минут</button>
-          <button class="button" type="button">1 минута</button>
+          <button class="button tfmin is-active" type="button">25 минут</button>
+          <button class="button fmin" type="button">5 минут</button>
+          <button class="button omin" type="button">1 минута</button>
           <input class="button" type="submit" value="Запустить">
         </form>
       </section>
-      <section id="stats-section">
+      <section class="disactive-section" id="stats-section">
+        <table>
+          <caption>Завершенные задачи</caption>
 
+          <tr>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Задача</th>
+            <th></th>
+          </tr>
+
+        </table>
       </section>
       <section id="progress-section">
 
       </section>
       <footer>
-        <img src="img/timer-section.svg" alt="image-timer-section">
+        <img id="img-timer" src="img/timer-section.svg" alt="image-timer-section">
+        <img id="img-stats" class="is-disactive" src="img/stats-section.svg" alt="image-stats-section">
       </footer>
     </main>
     <script src="scripts.js"></script>

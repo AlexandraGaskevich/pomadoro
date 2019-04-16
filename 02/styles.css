@@ -137,3 +137,40 @@ footer {
 
   text-align: right;
 }
+img.is-disactive {
+  display: none;
+}
+
+.button.is-active {
+  color: #A0B8B2;
+  background: #FAFFFE;
+}
+
+.disactive-section {
+  display: none;
+}
+
+caption {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 10px;
+}
+table {
+  text-align: left;
+}
+th {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+td {
+  font-size: 14px;
+  padding-right: 45px;
+  padding-bottom: 15px;
+}
+
+.cross {
+  width: 14px;
+  height: 14px;
+}
